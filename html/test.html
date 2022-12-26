@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" rel="shortcut icon" href="../img/saxophone.png">
+    <title>Planet of Music</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/questions.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body id="skroll">
+    <header>
+        <nav>
+            <div class="nav-bg">
+                    <div><a  href="../img/main.html"><img src="../img/music.png" 
+                        onmouseover="this.src='../img/music2.png'"
+                        onmouseout="this.src='../img/music.png'" id="logo"></a></div>
+                    <div><a href="main.html">HOME</a></div>
+                    <div><a href="music.html">MUSIC</a></div>
+                    <div><a href="history.html">HISTORY</a></div>
+                    <div><a href="awards.html">AWARDS</a></div>
+                    <div><a href="test.html">TEST</a></div>
+            </div>
+        </nav>
+        <nav>
+            <div class="container" >                
+                    <input id="responsive-menu" type="checkbox">
+                    <label for="responsive-menu">Menu<span id="menu-icon"></span></label>
+                <ul>
+                    <li><a href="main.html" class="button-style id1"><h2 class="heading">HOME</h2></a></li>
+                    <li><a href="music.html" class="button-style id2"><h2 class="heading">MUSIC</h2></a></li>
+                    <li><a href="history.html" class="button-style id4"><h2 class="heading">HISTORY</h2></a></li>
+                    <li><a href="awards.html" class="button-style id4"><h2 class="heading">AWARDS</h2></a></li>
+                    <li><a href="test.html" class="button-style id3"><h2 class="heading">TEST</h2></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="test">
+        <article >
+            <h1>MUSIC KNOWLEDGE TEST </h1>
+            <button class ="but" id= "start-btn" onclick="start()"><h3 id="go">Начать!</h3></button>
+            <div id="quiz">
+                <h3 id="progress"></h3>
+                <h3 id="questions"></h3>
+                <ul id="var">
+                  <li><button class ="but" id="btn0"><h3><span id="choice0"></span></h3></button></li>
+                  <li><button class ="but" id="btn1"><h3><span id="choice1"></span></h3></button></li>
+                  <li><button class ="but" id="btn2"><h3><span id="choice2"></span></h3></button></li>
+                  <li><button class ="but" id="btn3"><h3><span id="choice3"></span></h3></button></li>
+                  <li><button class ="but" id="btn4"><h3><span id="choice4"></span></h3></button></li>
+                </ul>
+              </div>
+        </article>
+        
+    </main>
+    <footer class="foot">2022© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

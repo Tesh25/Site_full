@@ -1,0 +1,142 @@
+
+main#test ul li:last-of-type {
+    margin-bottom: 0px;
+}
+
+main#test ul li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+} 
+
+#btn0, #btn1, #btn2, #btn3, #btn4 {
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+#start-btn {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    color: white;
+    font-size: 24px;
+    width: 50%;
+    transition: all .4s ease 0s;
+    border-radius: 40px;
+}
+
+
+
+ .but {
+    width: 100vh;
+    height: 12vh;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(17, 17, 17);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.but:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.but:hover:after{
+    background: transparent;
+}
+.but:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: rgba(17, 17, 17, 1);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+} 
+
+ @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#quiz {
+    display: none;
+}
+.foot{
+    display: none;
+}
+article {
+    display: inline-block;
+    background-color: #7f7878;
+    border-radius: 30px;
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+    font-family: "open_sans";
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "open_sans";
+    font-size: 4.5vh;
+    border: 2px transparent #212121;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #212121 ,#565858 );
+    padding: 1vh;
+}
+h3 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "open_sans";
+    font-size: 3.5vh;
+}
+h4 {
+    color: #000000;
+    text-align: center;
+    font-family: "open_sans";
+    font-size: 3.5vh;
+    padding: 1vh;
+}
+p{
+    font-size: 2.5vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    flex-wrap: wrap;
+}
+@media (max-width:1030px){
+    #var ul{
+        margin-left: -40px;
+    }
+}
+@media (max-width: 950px) and (min-width: 0px) {
+    nav .nav-bg{
+        display: none;
+    }
+}
